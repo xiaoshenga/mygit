@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+     <title></title>
+    <style>
+        body{
+            margin: 0;
+            
+        }
+        .wrapper{
+            width: 750px;
+            height: 550px;
+            background: url('./imgs/bg.png');
+            position: relative;
+            /* cursor: none; */
+            /* border: 1px solid black; */
+        }
+        .wrapper div{
+            width: 102px;
+            height: 103px;
+            /* border: 1px solid black; */
+            position: absolute;
+            top: 151px;
+            left: 142px;
+            overflow: hidden;
+        }
+        .wrapper div:nth-child(2){
+            top: 151px;
+            left: 329px;
+        }
+        .wrapper div:nth-child(3){
+            top: 155px;
+            left: 527px;
+        }
+        .wrapper div:nth-child(4){
+            top: 245px;
+            left: 116px;
+        }
+        .wrapper div:nth-child(5){
+            top: 245px;
+            left: 331px;
+        }
+        .wrapper div:nth-child(6){
+            top: 245px;
+            left: 530px;
+        }
+        .wrapper div:nth-child(7){
+            top: 338px;
+            left: 109px;
+        }
+        .wrapper div:nth-child(8){
+            top: 342px;
+            left:333px;
+        }
+        .wrapper div:nth-child(9){
+            top: 342px;
+            left: 549px;
+        }
+        .wrapper div img{
+            /* border: 1px solid black; */
+            position: absolute;
+            top: 102px;
+            left: 0;
+            /* transition: all 0.5s linear; */
+        }
+        .cui{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            margin-top: -40px;
+            margin-left: -40px;
+            user-select: none;
+        }
+        .wrapper div .active{
+           top :0;
+       }
+       .feng ,.shi{
+           display: inline-block;
+           width: 50px;
+           height: 40px;
+           /* border: 1px solid black; */
+           position: absolute;
+           line-height: 40px;
+           text-align: center;
+           top: 185px;
+           left: 263px;
+       }
+       .shi{
+           left: 514px;
+       }
+    </style>
+</head>
+<body>
+  <div class="wrapper">
+      <span class="feng">10分</span>
+      <span class="shi">60</span>
+      <img src="imgs/hammer1.png" alt="" class="cui">
+      <div class='lao1'><img src="imgs/mouse1.png" alt=""></div>
+      <div class='lao2'><img src="imgs/mouse1.png" alt=""></div>
+      <div class='lao3'><img src="imgs/mouse1.png" alt=""></div>
+      <div class='lao4'><img src="imgs/mouse1.png" alt=""></div>
+      <div class='lao5'><img src="imgs/mouse1.png" alt=""></div>
+      <div class='lao6'><img src="imgs/mouse1.png" alt=""></div>
+      <div class='lao7'><img src="imgs/mouse1.png" alt=""></div>
+      <div class='lao8'><img src="imgs/mouse1.png" alt=""></div>
+      <div class='lao9'><img src="imgs/mouse1.png" alt=""></div>
+  </div>
+  <script src='index.js'> </script>
+</body>
+</html>

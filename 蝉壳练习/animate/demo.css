@@ -1,0 +1,106 @@
+body,
+ul,
+li,
+p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.wrapper {
+    width: 80%;
+    margin: 100px auto;
+    min-width: 600px;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    margin: 0 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid blue;
+    background: black;
+    position: relative;
+
+}
+
+ul li div {
+    width: 200px;
+    height: 350px;
+    background: orange;
+    transform: translateY(100%);
+    transition: all 1s linear;
+}
+
+.ul li div.div {
+    transform: translateY(0%);
+}
+
+ul li:nth-child(2) div {
+    transition-delay: 0.2s;
+}
+
+ul li:nth-child(3) div {
+    transition-delay: 0.3s;
+}
+
+ul li:nth-child(4) div {
+    transition-delay: 0.4s;
+}
+
+ul li:nth-child(5) div {
+    transition-delay: 0.5s;
+}
+
+p {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    background: red;
+    transform: translateY(100%);
+    /* transition: all 0.5s linear; */
+}
+
+/* li:hover p{
+    transform: translateY(0);
+} */
+.inLeft,
+.outLeft {
+    transform: translate(-100%, 0);
+}
+
+.inLeft {
+    animation: dss 0.5s linear forwards;
+}
+
+.inRight,
+.outRight {
+    transform: translate(100%, 0);
+}
+
+.inRight {
+    animation: dss 0.5s linear forwards;
+}
+
+.inBottom,
+.outBottom {
+    transform: translate(0, 100%);
+}
+
+.inBottom {
+    animation: dss 0.5s linear forwards;
+}
+
+@keyframes dss {
+    100% {
+        transform: translate(0, 0);
+    }
+
+}

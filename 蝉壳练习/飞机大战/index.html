@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <title></title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper{
+            position: relative;
+            background: url("./image/ks.png");
+            width: 320px;
+            height: 568px;
+            margin: 50px auto;
+
+        }
+        .fei{
+            display: none;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            margin-left: -40px;
+            width: 66px;
+            height: 80px;
+            background: url("./image/我的飞机.gif");
+        }
+        .zi{
+            position: absolute;
+            width: 6px;
+            height: 16px;
+            background: url("./image/bullet1.png");
+        }
+        .strat{
+            z-index: 22;
+            position: absolute;
+            width: 100px;
+            height: 40px;
+            line-height: 40px;
+            bottom: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            background: rgba(0,0,0,0.5);
+            border-radius: 30px;
+            color: #fff;
+        }
+        .di{
+            position: absolute;
+            width: 34px;
+            height: 24px;
+            background: url('./image/enemy1_fly_1.png');
+        }
+    </style>
+</head>
+<body>
+  <div class="wrapper">
+      <div class="fei"></div>
+      <div class="strat">开始游戏</div>
+  </div>
+  <script src="./inde.js"></script>
+</body>
+</html>

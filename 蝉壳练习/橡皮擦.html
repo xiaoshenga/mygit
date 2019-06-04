@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>橡皮檫</title>
+	<style type="text/css">
+		canvas{
+			width: 400px;
+			height: 400px;
+			border: 1px solid black;
+
+		}
+	</style>
+</head>
+<body>
+	<canvas id='canvas' width="400" height="400">
+		
+	</canvas>
+	<script>
+		var ctx = canvas.getContext('2d');
+		// ctx.fillRect(0,0,400,400);
+		// canvas.onmousedown = function(){
+		// 		document.onmousemove = function (e){					
+		// 	var x= e.clientX-25;
+		// 	var y = e.clientY-25;
+		// 	console.log(x+','+y);
+		// 	ctx.clearRect(x,y,50,50);
+		// }
+		//  }
+		ctx.fillRect(0,0,400,400);
+		ctx.globalCompositeOperation = 'destination-out';
+		ctx.beginPath();
+		ctx.fillStyle = 'red';		
+		canvas.onmousedown = function(){
+			document.onmousemove = function(e){
+			var x= e.clientX;
+			var y = e.clientY;
+			ctx.arc(x,y,50,0,Math.PI*2);
+			ctx.fill();
+			}
+			document.onmouseup = function(){
+				document.onmousemove = null;
+			}
+		}
+
+	</script>
+	
+</body>
+</html>

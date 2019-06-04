@@ -1,0 +1,29 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1551956275183'); /* IE9 */
+  src: url('iconfont.eot?t=1551956275183#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAR4AAsAAAAACNwAAAQqAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDHAqFIIRRATYCJAMQCwoABCAFhG0HPxu6B8iemjxqCCiotgJgsZgg34N8KM/vTWaq5EPwQumSaRfQFT7aN8C9Ws6Ffj/g8Owwnq5QraZUmZnN/d59qUdXJs5FqMjqJDzk7975N4kSbGwyXfopmyBIShZKkTQ1bP7HMV+X57uB5LOtXbKCdqPdAMetA8r6URgpWCDf/T/Ea7iMm4EAeA78kDrfPkMZo68iAHK6mqCcMGAVOEKplhccTJAHMspmEXcZsML7ffJhCSXAkRXoG4v2mQ3D9/V5n4o6UZ2DgHA4GwD2GEABfgAG5Ch0tMgFCT8UL+fmRQCUho2DoUYqz8N0VyLaikJJnADX+Z9HWugKPYQNk9MDE1pU4OC5HhUoPA8TXYCCYZ8SIJfgEZARaeyGyWZop2fna21WRJmaNN/9q7j3X3nnt/z2T4MpK/N58ee6+1fHa7UWdO3aJRpzrvL1Y8PGveblGo0omZVJ0rQNHov3QTRHC1VZ6y+9EI2w5KClWmtxt2KIbRGn2b/kIKHqA4v3lXNihLOkWmklrT2oPrBvcLGWyEb5NK1Z2T6e37UPEPcLwhLvcs36dbssKrQ8v9jnACFq34ORwhLLyrVLzHcftmaSVLlYq7a8p65weGmW03fE23FShYQ/q06YfEMsknid9SH24gU7ZHAxz26Isn6v4y5c4JB0HeEhCfmkn4F9midKxXuz9yqPY5OX9s21WNMsHZqVdhFTpteDVY2ov0gMMjA2UEUQrwK8lR337u1AUkqMdAe+aAPczqRV6Bvr80fm1Ab245P9/ZunDS7m2QKyGYObX5Keia2JflLV2Nb4nJ7Lk7iOrIKyzk82+fRpMh/BOQhPhAbRN5Ly63yuvtxomeVzy+Umyx3PbWucF7IqbK4r/ZV4sNfRzT7PfLYcGVpu8vPSlJeNH6owWYN4+mgS/96sI+/+G2t1LYh2Xm4OzUJPcFnNLlmpM510aPzQJLP/pvemzRsn8RgCAHTLBmrjMSvnaSoAYOJe/Cx/g57V90ujYdw3pcAAAPf32oSigE6iueCNC2XhryFs2MIUsW5kKUksgepk6mM54AC8YQZ+iAxg4ukQLnOIbISSEyLgKNgDpeSGZFg/kBGEgZxSIvB8ZR4XmBqRQ1IFwMc8AMLIUeAYOAuUkStIhn0CMhbegZxRUOBVhOkFBR7RbaUapj3b2DIFu1vjSJnmveWXP7I+BGTiYo/wymbnhjE4ICidXnDEZogtoxO6OzamsGMkDjEDbsdBEOPQSOyx3De7xvbJIDCwo+iFmq2DIVhSGYzsMRtqcYG6SbGIcjrvWZmff8S0gwAxFU1lzlfM2HHHR8ECBDVALhRRo6ZLmT7qSOsas6fIsg5GLIQykI0FRiKGhorneZi019TVIZYYCMTtOpoqmtOrwjvcBcDTL8GCI5QwIgO7ArqUptKV1Ec630fvBAAAAA==') format('woff2'),
+  url('iconfont.woff?t=1551956275183') format('woff'),
+  url('iconfont.ttf?t=1551956275183') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1551956275183#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-play:before {
+  content: "\e634";
+}
+
+.icon-zanting:before {
+  content: "\e556";
+}
+
+.icon-laba:before {
+  content: "\e60c";
+}
+

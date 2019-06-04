@@ -1,0 +1,199 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background:url('../imgs/bg.jpg');
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+.wrapper{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,100px);
+    width: 600px;
+    /* background: #ccc; */
+    margin: 0 auto 0;
+    text-align: center;
+}
+.main{
+    /* margin-top: 50px; */
+    width: 100%;
+    text-align: center;
+    /* animation: tate 5s linear infinite; */
+}
+.main img{
+    width: 200px;
+    height: 200px;
+    border: 50px solid #000;
+    border-radius: 50%;
+
+}
+@keyframes tate{
+    100%{
+        transform: rotatez(360deg);
+    }
+}
+.gj{
+    display: inline-block;
+    position: relative;
+    width: 600px;
+    height: 80px;
+    background:rgba(0,0,0,0.5);
+    border-radius: 20px;
+    margin-top: 100px;
+    text-align: center;
+}
+.gj span{
+    color: #fff;
+    font-size: 30px;
+}
+.bo{
+    position: absolute;
+    left: 0;
+    top: 25px;
+    height: 30px;
+    width: 60px;
+    text-align: center;
+}
+.zant{
+    position: absolute;
+    right: 0;
+    top : 25px;
+    text-align:center;
+    height: 30px;
+    width: 60px;
+}
+.jd{
+    position: relative;
+    margin-top: 25px;
+    width: 400px;
+    height: 30px;
+    display: inline-block;
+  
+    color: #fff;
+}
+.st,.ed{
+    width: 60px;
+    height: 30px;
+    float:left;
+    line-height: 30px;
+    user-select: none;
+}
+.ed{
+    float: right;
+}
+.jd-box{
+    width: 240px;
+    position: absolute;
+    left: 80px;
+}
+.hei{
+    position: absolute;
+    top: 14px;
+    background: red;
+    width: 100%;
+    height: 2px;
+    user-select: none;
+}
+.bai{
+    position: absolute;
+    top: 14px;
+    width: 100px;
+    background: #fff;
+    height: 2px;
+    z-index: 2;
+    user-select: none;
+}
+.qiu{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top:-9px;
+    user-select: none;
+
+    /* background:rgba(58, 206, 115,05) */
+}
+.qiu:after{
+    position: absolute;
+    right: 0;
+    top: 6px;
+    content:"";
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    border-radius: 50%;
+  
+}
+.ying{
+    position: absolute;
+    width: 30px;
+    height: 118px;
+    background:rgba(0,0,0,0.5);
+    top: -125px;
+    left: 12px;
+    /* display: none; */
+    /* transform: rotatez(180deg); */
+}
+.yellow,.ying-bai{
+    position: absolute;
+    bottom: 0;
+    left: 14px;
+    width: 2px;
+    height: 100%;
+    background: #000;
+    user-select: none;
+
+}
+.ying-bai{
+
+    width: 2px;
+    height: 8px;
+    z-index: 2;
+    background: #fff;
+    user-select: none;
+}
+.radio-box{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: -9px;
+    top: 0;
+    user-select: none;
+}
+.radio{
+    position: absolute;
+    width: 8px;
+    height:8px;
+    border-radius: 50%;
+    background: #fff;
+    left: 6px;
+    top: 0;
+    user-select: none;
+}
+.radio-box .laba-ht{
+    margin-left: 20px;
+}
+ .gj .shang{
+    position: absolute;
+    bottom: 0;
+    font-size: 16px;
+    left: 102px;
+}
+.gj .xia{
+    position: absolute;
+    bottom: 0;
+    font-size: 16px;
+    right: 102px;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <title></title>
+    <style>
+    .wraper{
+        position: relative;
+        width: 140px;
+        height: 40px;
+        margin: 100px auto;
+    }
+    .less,.add{
+        width: 40px;
+        height: 46px;
+        line-height: 46px;
+        text-align: center;
+        background: #ccc;
+    }
+    .less{
+        float: left;
+    }
+    .add{
+        float: right;
+    }
+    input{
+        position: absolute;
+        left: 40px;
+        width: 60px;
+        height: 40px;
+        text-align: center;
+    }
+    .style{
+        background: #000;
+        color: #fff;
+    }
+    </style>
+</head>
+<body>
+    <div class="wraper">
+        <div class="less">-</div>
+        <input type="text" value="1">
+        <div class="add">+</div>
+    </div>
+<script src="./jquery-3.3.1.js"></script>
+<script>
+    var value = 1;
+    //设置点击事件
+    $('.wraper').find('.less').add('.add').click(function(){
+        if($(this).hasClass('less')){
+            change(-1);
+        }else{
+            change(1);
+        }
+        style();
+    })
+    change(0);
+    style();
+    //点击改变value值 
+    function change(num){
+        value=parseInt( $('input').val() )+num;
+        if(value <=1 || isNaN(value)){
+            value = 1;
+        }else if(value>=10){
+            value = 10;
+        }
+        $('input').val(value);
+    }
+    //设置样式
+    function style(){
+        if(value <=1){
+            $('.less').addClass('style');
+            $('.add').removeClass('style');
+        }else if(value >=10){
+            $('.add').addClass('style');
+            $('.less').removeClass('style');
+        }else{
+            $('.less').add('.add').removeClass('style');
+        }
+    }
+    $('input').on('input',function(){
+        change(0);
+        style();
+    })
+
+</script>
+</body>
+</html>

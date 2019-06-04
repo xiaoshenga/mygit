@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8'>
+	<title></title>
+		
+</head>
+<body>
+	<p>p</p>
+	<button>btn</button>
+		<script src="./jquery-3.3.1.js"></script>
+		<script>
+				$('p').on('click',function(){
+					$(this).css('background','red');
+				})
+				$('button').on('click',function(){
+					$('p').trigger('click');
+				})
+				
+		
+		</script>
+</body>
+</html>

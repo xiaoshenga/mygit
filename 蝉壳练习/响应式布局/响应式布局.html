@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+     <title></title>
+    <style>
+        body,ul,li,a,p{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+
+        }
+        body{
+            background:rgb(45, 45, 75);
+        }
+        a,p{
+            color: #fff;
+        }
+        .nav{
+            max-width: 980px;
+            background-color: black;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .ul,.ul2{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+           
+        }
+        .ul{
+            display: none;
+        }
+        .ul li,.ul2 li{
+            margin: 0 20px;
+            height: 44px;
+        }
+        .ul li a,.ul2 li a{
+            display: inline-block;
+            height: 44px;
+            line-height: 44px;
+           
+        }
+        .con{
+            width: 100%;
+            padding: 20px 0;
+            position: absolute;
+            
+        }
+        .con p {
+            width: 200px;
+            position: absolute;
+         
+        }
+        .con p:nth-child(4),
+        .con p:nth-child(3){
+            top: 120px;
+
+        }
+        .con p:nth-child(2n){
+            left: 0;
+        }
+        .con p:nth-child(2n+1){
+            right: 0;
+        }
+        @media screen and (max-width:600px){
+            .ul{
+                display: flex;
+            }
+            .ul2{
+               display: none;
+                flex-direction: column;
+                background:rgb(22, 22, 22);
+                z-index: 9;
+                position: absolute;
+            }
+            .ul2 li{
+                width: 100%;
+
+            }
+            .ul2 li:hover{
+                background: yellow;
+                
+            }
+            .ul2 li:hover a{
+                color: #000;
+            }
+            .ul2 li:nth-child(3){
+                display: none;
+            }
+            .con p{
+            padding: 10px 0;
+            width: 100%;
+            border-bottom:1px solid blue;
+            position: relative;
+            text-align:center;
+        }
+            .con p:nth-child(3),
+            .con p:nth-child(4){
+                     top: 0;    
+                }
+        }
+        .aaa{
+            display: flex;
+        }
+
+
+    </style>
+</head>
+<body>
+  <div class="wrapper">
+      <div class="nav">
+          <ul class="ul">
+              <li>
+                  <a href="" >导航 </a>
+              </li>
+              <li>
+                  <a href="javascript:;" class="dianji">=</a>
+              </li>
+          </ul>
+          <ul class="ul2">
+              <li>
+                  <a href="">办公</a>
+              </li>
+              <li>
+                  <a href="">视屏</a>
+              </li>
+              <li>
+                  <a href="">导航</a>
+              </li>
+              <li>
+                  <a href="">游戏</a>
+              </li>
+              <li>
+                    <a href="">休闲</a>
+                </li>
+          </ul>
+          <div class="con">
+              <p>我是1我是1我是1我是1我是1我是1我是1我是1我是1我是1我是1我是1我是</p>
+              <p>我是2我是2我是2我是2我是2我是2我是2我是2我是2我是2我是2我是我是2</p>
+              <p>我是3我是3我是3我是3我是3我是3我是3我是3我是3我是3我是3我是3我是3</p>
+              <p>我是4我是4我是4我是4我是4我是4我是4我是4我是4我是4我是4我是4我是4</p>
+          </div>
+      </div>
+  </div>
+  <script src="./demo.js"></script>
+</body>
+</html>

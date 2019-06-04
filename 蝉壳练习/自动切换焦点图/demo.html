@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+     <title></title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .wrapper{
+            position: relative;
+        }
+        .wrapper div{
+            float: left;
+          
+        }
+        .left img{
+            width: 140px;
+            display: block;
+            margin: 5px;
+           
+        }
+        .right{
+            position: relative;
+        }
+        .right img{
+            width: 440px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin-top: 5px;
+            display: none;
+        }
+        .wrapper:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .logo{
+            width: 140px;
+            position: absolute;
+            margin: 5px;
+            top: 5px;
+            left: 0;
+            transition: all 0.5s linear;
+        }
+        .right .active{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+  <div class="wrapper">
+      <div class="left">
+        <img src="./imgs/1.jpg" alt="" >
+        <img src="./imgs/2.jpg" alt="">
+        <img src="./imgs/3.jpg" alt="">
+      </div>
+      <img src='./imgs/pointer.png' alt="" class='logo'>
+      <div class="right">
+        <img src="./imgs/1.jpg" alt="" class="active">
+        <img src="./imgs/2.jpg" alt="">
+        <img src="./imgs/3.jpg" alt="">
+      </div>
+  </div>
+  <script src="demo.js"></script>
+</body>
+</html>

@@ -1,0 +1,474 @@
+body,ul,li,a,p{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+    min-width: 1226px;
+}
+.site-topbar{
+    position: relative;
+    height: 40px;
+    font-size: 12px;
+    background: #333;
+    color: #b0b0b0;
+}
+.site-topbar a{
+    color: #b0b0b0;
+}
+.site-topbar a:hover{
+    color: #fff;
+}
+.container{
+    width: 1226px;
+    margin: 0 auto;
+    height: 40px;
+}
+.topbar-nav{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+}
+.container ul li{
+    float: left;
+    margin-right: 5px;
+}
+.topbar-rightTow{
+    float: right;
+    height: 40px;
+    line-height: 40px;
+    background: #424242;
+    width: 150px;
+    text-align: center;
+}
+.topbar-right{
+    float: right;
+    height:40px;
+    line-height: 40px;
+    margin-right: 10px;
+}
+.topbar-right a{
+    margin: 0 5px;
+}
+.topbar-nav-span,.topbar-right a.topbar-nav-span{
+    color: #424242;
+}
+.navTwo{
+    background: #fff;
+    width: 1226px;
+    height: 100px;
+    position: relative;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    /* display: flex;
+    justify-content: center; */
+}
+.barImg{
+    position: absolute;
+    top: 26.5px;
+    width: 57px;
+    height: 57px; 
+    overflow: hidden;
+}
+.navTwo a img{
+    width: 57px;
+    height: 57px;
+    background-color: #FF6700;
+    position: absolute;
+}
+.barImg-box{
+    position: absolute;
+    left: 0;
+    top : 0;
+    transition: all 0.2s linear;
+}
+.barImg-box:hover{
+    left: 57px;
+}
+.barImg-2{
+    left: -57px;
+}
+.navTwo-nav{
+    height: 100px;
+    margin-left: 103px;
+    /* display: flex;
+    justify-content: center; */
+}
+.navTwo-nav ul li{
+    float: left;
+    height:100px;
+    line-height: 100px;
+}
+.navTwo-nav ul li a{
+    color: #000;
+    font-size: 16px;
+    margin: 0 10px;
+}
+.shou{
+}
+.shou-box{
+    height: 50px;
+    position: absolute;
+    top: 25px;
+    right: 0;
+    display: flex;
+}
+.shou-box input{
+    height: 50px;
+    width: 223px;
+    padding: 0 10px;
+    outline: none;
+    border: 1px solid #e0e0e0;}
+.shou-box .text{
+    position: absolute;
+    top:10px;
+    right: 60px;
+}
+.shou-box .btn{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #e0e0e0;
+    border-left:0;
+    background: #fff;
+    text-align: center;
+    
+}
+.shou-box .btn span{
+    font-size: 30px;
+    
+}
+.shangou{
+    width: 1226px;
+    margin: 0 auto;
+    position: relative;
+}
+.baio{
+    width: 1226px;
+    background: url('./img/seckill-head.jpg') center 0 no-repeat;
+    height: 170px;
+    margin:0 auto;
+}
+.shangou-nav{
+    width: 1226px;
+    position: absolute;
+    top: 110px;
+    background: #414141;
+    color: #fff;
+    z-index: 888;
+}
+.shangou-fiex{
+    position: fixed;
+    top: 0px;
+}
+.shangou-nav ul{
+    display: flex;
+    width:100%;
+   
+}
+.active{
+    background-color: #f1393a;
+}
+.shangou-nav ul li{
+    position: relative;
+    height:60px;
+    width: 20%;
+}
+.shangou-nav ul li>span{
+   position: absolute;
+    font-size: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 51px;
+}
+.shangou-nav ul li div{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100px;
+}
+
+.shang-main{
+    display: none;
+    width: 1226px;
+    margin: 20px auto 0;
+}
+.shangou .active2{
+    display: block;
+}
+.shang-main ul li{
+    position: relative;
+    float: left;
+    width:400px;
+    height: 190px;
+  
+    /* background: red; */
+    margin-bottom: 10px;
+    /* margin-right:10px; */
+}
+.shang-main ul li:hover{
+    box-shadow: 0 15px 30px rgba(0,0,0,.1);
+    transition: all linear .2s;
+    transform: translateY(-2px);
+}
+.shang-main ul li:nth-child(2){
+    margin: 0 10px;
+}
+.shang-main ul li img{
+    width:190px;
+    height:190px;
+}
+.shang-main ul li .sg-con{
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 210px;
+    height: 190px;
+    text-align: center;
+}
+.shang-main ul li .sg-con span:first-child{
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+	white-space: nowrap;
+    width: 150px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.shang-main ul li .sg-con p{
+    margin: 0 20px;
+    height: 32px;
+    font-size: 12px;
+    overflow: hidden;
+}
+.shang-main ul li .sg-con span:nth-child(3){
+    display: block;
+    margin: 20px auto;
+    font-size: 16px;
+    color: red;
+    
+}
+.shang-main ul li .sg-con span:nth-child(3) del{
+    color: rgba(0,0,0,.54);
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.shang-main ul li .sg-con a span{
+    width: 120px;
+    height: 30px;
+    background: #83c44e;
+    color: #fff;
+    line-height: 30px;
+}
+.shang-main:after,.shangou,.footer-nav{
+    content: '';
+    display: table;
+    clear: both;
+}
+.shangou .bottom{
+    margin-top: 100px;
+    padding-bottom: 35px;
+    font-size: 14px;
+    color: rgba(0,0,0,.27);
+}
+.footer{
+    width: 1226px;
+    margin: 0 auto;
+    background: #fff;
+}
+ .footer-nav{
+    width: 1226px;
+    padding: 27px 0;
+    font-size: 16px;
+}
+.footer-nav{
+    width: 1226px;
+    margin: 0 auto;
+}
+.footer-nav ul li{
+    /* position: relative; */
+    width: 19.8%;
+    float: left;
+    text-align: center;
+    border-right: #DDDDDD solid 1px;
+    height: 25px;
+    line-height: 25px;
+}
+ .footer-nav ul li  a span:first-child {
+    font-size: 25px;
+    
+}
+ .footer-nav ul li:nth-child(5){
+    border-right: 0;
+}
+.navTwoBar{
+    width: 100%;
+    background: #fff;
+}
+.footer-nav ul li  a{
+    color: #000;
+}
+.footer-nav ul li  a:hover{
+    color: #FF6700;
+}
+
+.footerBar{
+    width: 100%;
+    background: #fff;
+}
+.footer-nav-box{
+    width: 100%;
+    border-bottom: 1px solid #e0e0e0;
+}
+.footer-about{
+    padding: 40px 0;
+
+}
+.footer-aboute-left{
+    float: left;
+}
+.footer ul{
+    float: left;
+    width: 160px;
+    height:112px;
+}
+.footer-aboute-left  a{
+    color: #757575;
+    font-size: 12px;
+}
+.footer-aboute-left  a:hover{
+    color: #FF6700;
+}
+.footer .footer-aboute-left ul li:first-child {
+    margin: -1px 0 26px;
+   
+    line-height: 1.25;
+    
+}
+.footer .footer-aboute-left ul li .tuo{
+    color: #424242;
+    font-size: 16px;
+}
+.footer-aboute-left:after,.footer-about:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.footer-aboute-right{
+    height: 112px;
+    width: 251px;
+    border-left: #e0e0e0 solid 1px;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-aboute-right p:first-child{
+    font-size: 22px !important;
+    color: #FF6700 !important;
+    line-height: 1;
+    margin: 0 0 5px !important;
+}
+.footer-aboute-right p{
+    text-align: center;
+    font-size: 12px;
+    margin: 0 0 16px;
+    color: #616161;
+}
+.footer-aboute-right div{
+    text-align: center;
+    width: 118px;
+    height: 28px;
+    line-height: 28px;
+    display: inline-block;
+    background: #FFFFFF;
+    border: #FF6700 solid 1px;
+    font-size: 12px;
+    color: #FF6700;
+    transition: all .2s linear;
+}
+.footer-aboute-right div:hover{
+    background: #FF6700;
+    color: white;
+}
+.footer-aboute-right div img{
+    width: 15px;
+    height: 15px;
+    margin-top: 2px;
+    display:inline-block;
+}
+.about-list{
+    padding: 30px 0 0 ;
+    background: #fafafa;
+}
+.listBar{
+    width: 1226px;
+    margin: 0 auto;
+}
+.listBarImg{
+    float: left;
+}
+.listBar .listBarImg img{
+    background: #FF6700;
+    width: 57px;
+    height: 57px;
+}
+.listBar .listBar-zhong{
+    float: left;
+}
+.listBar .listBar-zhong a{
+    color: #757575;
+    font-size: 12px;
+}
+.listBar .listBar-zhong .p2 a {
+    color: #b0b0b0;
+    font-size: 12px;
+    line-height: 18px;
+    outline: 0;
+}
+.listBar .listBar-zhong .p2 a:hover{
+    color: #FF6700;
+}
+.listBar .listBar-zhong .p2{
+    color: #b0b0b0;
+}
+.listBar .listBar-right{
+    float: right;
+}
+.listBar .listBar-right a{
+    display: inline-block;
+}
+.listBar .listBar-right a img{
+    width: 85px;
+    height: 28px;
+}
+.listBar:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.zuixia{
+    clear: both;
+    width: 267px;
+    height: 19px;
+    margin: 30px auto;
+    background: url('./img/mi-qoute.png');
+}
+.navTwoBar .text a{
+    display: inline-block;
+    color: #757575;
+    background-color: #eee;
+    margin-left: 5px;
+    padding: 1px 5px;
+    font-size: 12px;
+    opacity: 1;
+    transition: all .3s;
+}
+.navTwoBar .text a:hover{
+    background-color: #ff6700;
+    color: #ffffff;
+}

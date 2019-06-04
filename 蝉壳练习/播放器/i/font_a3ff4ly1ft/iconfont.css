@@ -1,0 +1,25 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1551950852598'); /* IE9 */
+  src: url('iconfont.eot?t=1551950852598#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAO8AAsAAAAAB6wAAANtAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqDFIJ+ATYCJAMMCwgABCAFhG0HOBvGBhHVm1XI/gQZyK06gLS2Dsf0SrM2p72lOKfdU0Ve2Xzs4Tv/DTSFKUgAAAAAgOB5uN97bvxM+htFUuqoC6N8lkmzCW4YCTRf42zAj4fv92vn/fvWMEmb8dDxvAnxSKIFD4WSfDrdQnJrnIytQ0TXGQ2iSqKpJryaJmmizaQEiJYhNGiEBP8B8PQoyjTS0sAyDiwo0MT+Iv/eASxt8SoDcL9tfz95CQsJi7wO/Vs/2Sk6hiUCVHwOm//nEIHe/1xO764Sn9+yXOaY2DvqBRgHFNieuJbgAknQG8auvIjNEBBXrYVMW4amqHJGLwGyEV9boJrycs4SUSJcMjEjm4ARLS6Qd3Dpf18etSY8qFBgDBxb715m/FpuKGr/we8iwBvPDLBpYKAFOGSt1DonwmgLE1ekuT4zzAkdK/C/z1XFYfMPD5RAyhj5SQANSKInxbMZUPwR/6y3MQBhEAG78IhIxVTjLcnKCBoQWXjM3NXOX9zZ87NmiWcCdvJcl7PSNBxyUaNRZ8BBupxX09mG49gb1Pps+26/OBW1t1DrhQ7ymc4vcRqQOgdefch9/MdwWTHYlTRBoA727a0DWdvVqlHDWOQiokO+dPuv0O/bfDRZLtspi1Oe6+WsgKIxZkMhftJfTjElYjbCp+flLjrIdVMtbi/SP1ZNG7G8KUhTHWQflVIZbYTOJG5Yi/lz96EIhXUxR4sGoTFIjEDJtRKvmz5JTvP35zZZiO1w8WDIjqprYdaZFB2FUWecXh5bZrliMkw5H13fZ21nHiAopighAnEO43/7DbfZ+tJ21Td0AN4D0L47kKFdLqIUrXl/ideywlWBobMsc22ubjMDCTcKyOYy/k0xQN5vf3sJsVlEOQ+CiqgCE1WDOqkFQhLaISyqC+Ka9U5PKFgXJMeAJicARNYNqLRXMFlvqJN+IKTsH8KyCQVxM4m1YEJdEsMDoWQ0oE4IehysZeBHUPhGt3aSkgKf/EdaQgDKrMgmWhyQxhiybK5itmBp7KEB22HXjTDRGFFz5pmnOs9t2YUyPfbiIRBKRgPqhKDHwbq1+ZH7/Bvd2kmqwVWY/0hLaBzKrGiBttKhFe5adlk2VzFbsDT20AAzdmZ0hKm8XUTNme8RnuocVbNtpdn88v751kGTMIbGpUiRsqZOntfljXgGJwQAAAA=') format('woff2'),
+  url('iconfont.woff?t=1551950852598') format('woff'),
+  url('iconfont.ttf?t=1551950852598') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1551950852598#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-play:before {
+  content: "\e634";
+}
+
+.icon-zanting:before {
+  content: "\e556";
+}
+

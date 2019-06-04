@@ -1,0 +1,16 @@
+获取属性值用“点”，多层的，就用多个点
+
+属性的特性  值 trure/false
+	writable		可写，是否设置该属性的值
+	enumerable	可枚举，for/in是否可以获取该值
+	configurable	可配置 ，是否可以删除或修改该属性特性 configurable
+
+定义属性的特性
+	Object.defineProperty（对象，属性名字字符串，特性描述对象）
+	Object.defineProperties(对象，多属性特性描述对象）
+
+查看属性的特性
+	Object.getOwnPropertyDescriptor(对象，属性名）---》私有属性的特性描述
+
+set，get
+	

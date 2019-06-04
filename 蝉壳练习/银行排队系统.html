@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <title></title>
+    
+</head>
+<body>
+  <script>
+
+     var person =  (function(){
+        var Vnum = 1,
+          Nnum = 1;
+          return function(){
+            if(Math.random() > 0.5){
+              return "vip" + Vnum++;
+            }else{
+              return "N" + Nnum++;
+             }
+          }
+      }());
+      var arr = [];
+      for(var i =0; i< 6; i++){
+          paidui(person());
+        //   arr.push(person());
+      }
+    function paidui (person){
+        if(person[0] == 'v'){
+            for(var i= 0; i< arr.length; i++){
+                if(arr[i][0] == 'N'){
+                    arr.splice(i,0,person);
+                    return;
+                }
+            }
+        }
+        arr.push(person);
+    }
+    console.log(arr.toString());
+    setInterval(function(){
+        var ren = arr.shift();
+        console.log('过来取票' + ren);
+        var jin = person();
+        console.log('进来一个人' + jin);
+        paidui(jin);
+        console.log(arr.toString());
+    },3000)
+ </script>
+</body>
+</html>

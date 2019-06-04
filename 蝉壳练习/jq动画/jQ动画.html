@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <title></title>
+    <style>
+        .itme{
+            position: relative;
+            width: 300px;
+            min-height: 40px;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 10px;
+
+        }
+        span{
+            position: absolute;
+            left: 0;
+            top: 0;
+            right:0;
+            bottom: 0;
+            display:block;
+            width: 300px;
+            height: 50px;
+            line-height: 50px;
+            font-weight: 700;
+            color: #fff;
+            background: rgb(95, 91, 95);
+            border-radius: 20px;
+            z-index:1;
+        }
+        p{
+            position: absolute;
+            width: 280px;
+            left: 10px;
+            top: 40px;
+            margin: 0;
+            display: none;
+            height: 60px;
+            background: red;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            line-height: 60px;
+        }
+        .add{
+            width: 50px;
+            height: 50px;
+            background: #000;
+            color: #fff;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 50px;
+            margin: 20px auto;
+            font-size: 30px;
+        }
+        .hid{
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+            z-index:9999;
+        }
+        .box{
+            width: 300px;
+            margin: 200px auto;
+            position: relative;
+        }
+        .box input{
+            width: 300px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border: none;
+            border-bottom: 1px solid rgba(0,0,0,0.5);
+            font-size: 20px;
+            z-index: 999;
+        }
+        .hidden{
+            position: absolute;
+            top:0;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            background: #000;
+            color: #fff;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 50px;
+            font-size: 30px;
+        }
+        .wrapper:after,.itme:after{
+        	content:" ";
+        	display: block;
+        	clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="add">+</div>
+    <div class="wrapper">
+        <div class="itme">
+            <span>小生</span>
+            <p>kdfahsjkfhjsahfjks</p>
+        </div>
+    </div>
+    <script src="./jquery-3.3.1.js"></script>
+    <script>
+        //然名字描述p，显示隐藏
+        $('.wrapper').on('click','span',function(){
+            $(this).next().slideToggle();
+        })
+
+        //第一季点击创建蒙层
+        $('.add').one('click',function(){
+            var str = '    <div class="hid">\
+                                <div class="box">\
+                                    <input type="text" class="name"value=\'name\'>\
+                                    <input type="text" class="des"value=\'描述\'>\
+                                    <div class="hidden">X</div>\
+                                </div>\
+                            </div>';
+            $('body').append(str);
+        }).on('click',function(){
+            $('.hid').fadeIn();
+        })
+
+        //蒙层的关闭按钮，并创建出一个新的itme
+        $('body').on('click','.hidden',function(){
+            var name = $('.name').val();
+                des = $('.des').val();
+                $('.wrapper').append('\
+                                    <div class="itme">\
+                                        <span>'+name+'</span>\
+                                        <p>kdfahsjkfhjsahfjks</p>\
+                                    </div>\
+                ')
+            $('.hid').fadeOut();
+
+        })
+    </script>
+</body>
+</html>

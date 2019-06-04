@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+     <title>新闻</title>
+    <style>
+        body,input{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background:	rgba(0,0,0,.5);
+        }
+        .wrapper{
+            width:300px;
+            background:#ccc;
+            margin:0 auto;
+            font-size:0;
+            height:300px;
+            position:relative;
+        }
+        input{
+            display: none;
+        }
+        label{
+            display: inline-block;
+            height: 40px;
+            background:rgb(233, 126, 126);
+            width: 100px;
+            font-size: 16px;
+            text-align:center;
+            line-height: 40px;
+            /* position: absolute; */
+            z-index: 2;
+            left: 0;
+        }
+        label:nth-of-type(2){
+            left: 100px;
+            
+        }
+        label:nth-of-type(3){
+            left: 200px;
+        }
+        .wrapper div{
+            width: 300px;
+            height: 260px;
+            position: absolute;
+            top:40px;
+            left: 0;
+            background: #fff;
+           
+            text-align: center;
+            line-height: 260px;
+            color:black;
+            font-size:16px;
+            display:none;
+        }
+        /* input:nth-of-type(1):checked + label + div,
+        input:nth-of-type(2):checked + label + div,
+        input:nth-of-type(3):checked + label + div{
+           
+            display: block;
+        } */
+        #n1:checked +label + div,
+        #n2:checked +label + div,
+        #n3:checked +label + div{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+  <div class="wrapper">
+      <input type="radio"name="btn" id="n1" checked>
+      <label for="n1">热门新闻</label>
+      <div>我最帅</div>
+      <input type="radio" name="btn" id= "n2">
+      <label for="n2">国内新闻</label>
+      <div>我最酷</div>
+      <input type="radio" name="btn" id= "n3">
+      <label for="n3">国际新闻</label>
+      <div>我最man</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <title></title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+        }
+        ul,li{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .wrapper{
+            width: 600px;
+            height: 50px;
+            align-self: center;
+
+        }
+        .wrapper ul{
+            display: flex;
+            /* justify-content: center; */
+            background: #ccc;
+           
+        }
+        .wrapper ul li{
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+            background: linear-gradient(to left,red,transparent,red); 
+            text-align: center;
+            flex-grow: 1;
+        }
+        .main{
+            display: flex;
+        }
+        .left{
+            width: 200px;
+            background: yellow;
+        }
+        .right{
+            width: 200px;
+            background: yellow;
+        }
+        .content{
+            width: 100px;
+            flex-grow: 1;
+            margin: 30px;
+        }
+        .footer{
+            align-self: center;
+            padding: 20px;
+            background: blue;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <ul>
+            <li>新闻</li>
+            <li>游戏</li>
+            <li>视屏</li>
+            <li>娱乐</li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="left">我是left</div>
+        <div class="content">房间都是破解房间都是破解房间都是破解房间都是破解房间都是破解房间都是破解房间都是破解房间都是破解房间都是破解房间都是破解房间都是破解房间都是破解房间都是破解房间都是破解房间都是破解房间都是破解房间都是破解房间都是破解房间都是破解房间都是破解房间都是破解房间都是破解房间都是破解房间都是破解</div>
+        <div class="right">我是right</div>
+    </div>
+    <div class="footer">啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦拉阿拉</div>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <title></title>
+    <style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .wrapper{
+        position: relative;
+        overflow: hidden;
+        width: 400px;
+        height: 250px;
+        margin: 100px auto 0;
+    }
+    .Img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 2500px;
+        height: 250px;
+        font-size: 0;
+    }
+    .btn{
+        position: absolute;
+        left:50%;
+        transform: translateX(-50%);
+        bottom: 20px;
+        
+    }
+    span{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #fff;
+    }
+    .left,.right{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 30px;
+        height: 50px;
+        line-height: 50px;
+        background: rgba(0,0,0,0.5);
+        color: #fff;
+        text-align: center;
+    }
+    .left{
+        left: 0;
+
+    }
+    .right{
+        right: 0;
+    }
+    .show{
+        background: #000;
+    }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="Img">
+            <img src="./img/01.jpg" alt="">
+            <img src="./img/02.jpg" alt="">
+            <img src="./img/03.jpg" alt="">
+            <img src="./img/04.jpg" alt="">
+            <img src="./img/05.jpg" alt="">
+            <img src="./img/01.jpg" alt="">
+        </div>
+        <div class="btn">
+            <span class='show'></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="left"><</div>
+        <div class="right">></div>
+    </div>
+    <script src="./jquery-3.3.1.js"></script>
+    <script>
+        var index = 0;
+        var itmer =  setInterval(move,1000)
+        //自动轮播
+        function move(){
+            Left(-400,1);
+        }
+        //点击按钮，跳转到对应图片
+        $('span').click(function(){
+            index = $(this).index();
+            active();
+            $('.Img').css({
+                  left: index * -400,
+                })
+        })
+        //点击左右按钮切换图片
+        $('.left').add('.right').click(function(){
+            if($(this).hasClass('left')){
+                Left(-400,-1);
+            }else{
+                Left(-400,1);
+            }
+        })
+        function Left(num,num2){
+            $('.Img').stop(false,true);
+            index += num2;
+            active();
+            if(index ==6) {
+                index = 0;
+                $('.Img').css({
+                     left: index*num,
+                    })
+                index++;
+                active();
+                }else if(index <0){
+                    index = 5;
+                    $('.Img').css({
+                     left: index*num,
+                    })
+                index--;
+                }
+            $('.Img').animate({
+                left: index*num
+            })
+        }
+        //鼠标悬停在图片上清楚自动轮播
+        $('.wrapper').mouseover(function(){
+            clearInterval(itmer);
+        }).mouseout(function(){
+            itmer =  setInterval(move,1000);
+        })
+        //设置按钮的别选中的样式
+        function active(){
+            $('span').removeClass('show').eq(index%5).addClass('show');
+        }
+    
+    </script>
+</body>
+</html>

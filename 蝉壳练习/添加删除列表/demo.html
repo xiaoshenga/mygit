@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <title></title>
+    <style>
+        .hidden{
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0, 0, 0.5);
+        }
+        .hidden .main{
+            position: absolute;
+            background: #fff;
+            width: 500px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            height: 46px;
+            text-align: center;
+            padding: 40px 0;
+        }
+        .main input{
+            width: 300px;
+            height: 40px;
+        }
+       .active li{
+           background: red;
+       }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>3</li>
+        <li>3</li>
+        <li>3</li>
+    </ul>
+    <button class="add">add</button>
+    <div class="hidden">
+        <div class="main">
+            <input type="text">
+            <button class="ok">OK</button>
+        </div>
+    </div>
+    <script src="./jquery-3.3.1.js"></script>
+    <script>
+        $('.add').add('.ok').click(function(){
+            if($(this).hasClass('add')){
+                $('.hidden').css('display','block');
+            }else{
+                $('ul').append('<li>'+$('.hidden .main input').val()+'</li>')
+                $('.hidden').css('display','none');
+                $('.hidden .main input').val('');
+            }          
+        })
+        $('li').click(function(){
+            $(this).toggleClass('active');
+        })
+    </script>
+</body>
+</html>

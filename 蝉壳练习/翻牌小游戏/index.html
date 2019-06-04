@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <title></title>
+    <style>
+        .wrapper{
+            width: 640px;
+            height: 640px;
+            
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: space-around;
+            margin: 100px auto;
+        }
+        .wrapper div{
+            height: 205px;
+            width: 150px;
+            display: flex;
+            background: #000;
+            transform-style: preserve-3d;
+            transition: all 0.5s linear;
+            backface-visibility: hidden;
+            /* float: left; */
+        }
+        .wrapper div img{
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            align-self: center;
+        }
+        .wrapper div img:nth-child(2){
+            transform: rotateY(180deg);
+        }
+        .wrapper .active{
+             transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div data-name="aimee"> 
+            <img src="./img/logo.png" alt="">
+            <img src=".//img/Aimee.png" alt="">
+        </div>
+        <div data-name="aimee"> 
+            <img src="./img/logo.png" alt="">
+            <img src=".//img/Aimee.png" alt="">
+        </div>
+        <div data-name="cc">
+            <img src="./img/logo.png" alt="">
+            <img src="./img/CC.png" alt="">
+        </div>
+        <div data-name="cc">
+            <img src="./img/logo.png" alt="">
+            <img src="./img/CC.png" alt="">
+        </div>
+        <div data-name="Chenghao"> 
+            <img src="./img/logo.png" alt="">
+            <img src="./img/Chenghao.png" alt="">
+        </div>
+        <div  data-name="Chenghao">
+            <img src="./img/logo.png" alt="">
+            <img src="./img/Chenghao.png" alt="">
+        </div>
+        <div data-name="Guyue">
+            <img src="./img/logo.png" alt="">
+            <img src="./img/Guyue.png" alt="">
+        </div>
+        <div data-name="Guyue">
+            <img src="./img/logo.png" alt="">
+            <img src="./img/Guyue.png" alt="">
+        </div>
+        <div data-name="Zero">
+            <img src="./img/logo.png" alt="">
+            <img src="./img/Zero.png" alt="">
+        </div>
+        <div data-name="Zero">
+            <img src="./img/logo.png" alt="">
+            <img src="./img/Zero.png" alt="">
+        </div>
+        <div data-name="Luwei">
+            <img src="./img/logo.png" alt="">
+            <img src="./img/Luwei.png" alt="">
+        </div>
+        <div data-name="Luwei">
+            <img src="./img/logo.png" alt="">
+            <img src="./img/Luwei.png" alt="">
+        </div>
+
+    </div>
+    <script src="./jquery-3.3.1.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

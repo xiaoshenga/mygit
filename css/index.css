@@ -1,0 +1,79 @@
+header{
+	background: rgb(200,179,222);
+}
+header .navbar{
+	margin-bottom: 0;
+	background: none;
+	border:none;
+}
+
+.jumu{
+	background:url('../imgs/jum.jpg');
+	background-size: cover;
+	background-position: top center;
+}
+.jumu .jumbotron{
+	background:none;
+}
+.shejiao{
+
+	height: 50px;
+	background: #ccc;
+}
+.biaoti{
+	margin: 0 auto;
+	width: 300px;
+	padding-bottom: 10px;
+	border-bottom:1px solid  #ccc;
+	margin-bottom:20px;
+}
+.biaoti .title{
+	text-align: center;
+	
+}
+.row{
+
+}
+.row .thumbnail{
+	 
+}
+.row .thumbnail img{
+	height: 126px;
+    width: 100%;
+    display: block;
+  
+}
+.warpper{
+
+	
+}
+.caption{
+	text-align: center;
+}
+footer{
+	margin-top: 40px;
+	padding: 30px 0;
+	text-align: center;
+	background: rgb(200,200,200);
+}
+.nav{
+	display: block ;
+}
+#ico{
+	font-size: 30px;
+	position: absolute;
+	top: 16px;
+	right: 0;
+}
+#ico:hover img{
+	opacity: 1;
+}
+.weixin{
+	opacity: 0;
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: 151%;
+	left: 0;
+	transition: all 1s;
+}

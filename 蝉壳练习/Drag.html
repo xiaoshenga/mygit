@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <title></title>
+    <style>
+        ul,li{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        li{
+            width: 100px;
+            height: 40px;
+            background: #ccc;
+            margin: 10px;
+
+        }
+        .remove{
+            width: 300px;
+            height: 400px;
+            background: #000;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+  <ul>
+      <li draggable="true">列表1</li>
+      <li draggable="true">列表2</li>
+      <li draggable="true">列表3</li>
+      <li draggable="true">列表4</li>
+      <li draggable="true">列表5</li>
+  </ul>
+  <div class="remove">删除</div>
+  <script>
+      var li = document.getElementsByTagName('li'),
+          remove = document.getElementsByClassName('remove')[0],
+          ul = document.getElementsByTagName('ul')[0];
+var len = li.length;
+          for(var i = 0; i< len; i++){
+                    li[i].addEventListener('dragstart',function(e){
+                     var dt = e.dataTransfer;
+                     var index = index2(this,li);   //得到遍历li,this所在li的索引
+                     dt.setData('class',index);     //保存索引
+                     })
+                     //取消默认事件
+                     li[i].addEventListener('dragover',function(e){
+                         e.preventDefault();
+                     })
+                     li[i].addEventListener('drop',function(e){
+                         console.log(this);
+                         var dt = e.dataTransfer;
+                         var demo = dt.getData('class');
+                         ul.insertBefore(li[demo],this);    //让li【dem】插入到this的前面
+                     })
+          }
+          //取消默认事件
+          remove.addEventListener('dragover',function(e){
+            e.preventDefault();
+          })
+          //删除拖动进来的元素
+          remove.addEventListener('drop',function(e){
+              var dt = e.dataTransfer;
+              var demo = dt.getData('class');
+              console.log(document.getElementsByClassName(demo)[0]);
+             li[demo].remove();
+              return;
+          })
+    //遍历一遍li返回当前拖动元素的索引
+  function index2(demo,ele){
+    for(var i = 0; i< ele.length; i++){
+        if(ele[i] == demo){
+            return i;
+        }
+    }
+  }
+  </script>
+</body>
+</html>

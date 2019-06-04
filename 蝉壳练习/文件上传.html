@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <title></title>
+    <style>
+        .content{
+            width: 300px;
+            height: 300px;
+            background: #000;
+            color: #fff;
+            line-height: 300px;
+            text-align: center;
+        }
+       .box{
+            width: 300px;
+            margin-top: 20px;
+
+        }
+        .jd{
+            width:250px;
+            height: 30px;
+            border-radius: 15px;
+            float: left;
+            overflow: hidden;
+        }
+        .jd-progress{
+            width: 0;
+            height: 30px;
+            background: rgb(58,52,52);
+        }
+        .bai{
+            width: 50px;
+            height: 30px;
+            float: right;
+            line-height: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">上传文件</div>
+    <div class="box">
+        <div class="jd">
+            <div class="jd-progress"></div>
+        </div>
+        <div class="bai">0%</div>
+    </div>
+<script>
+     var target = document.getElementsByClassName('content')[0],
+         progress = document.getElementsByClassName('jd-progress')[0],
+         bai = document.getElementsByClassName('bai')[0];
+    var file,
+        reader = new FileReader(),
+        loaded = 0, //当前文件传送的大小
+        total,      //文件的总大小
+        speed = 1024*1024;  //文件传送的速度
+
+
+    target.addEventListener('dragover',function(e){
+             e.preventDefault();
+         })
+    target.addEventListener('drop',function(e){
+             e.preventDefault();    //清楚默认事件
+             file = e.dataTransfer.files[0];    //获取到拖入到元素上的文件
+             total = file.size;
+             readBlob(0,speed,reader);
+             binEvent();
+         })
+//截取文件，
+  function readBlob(strat,speed,reader){
+      var blob = file.slice? file.slice(strat,strat+speed) : file;
+      reader.readAsText(blob);;
+  }
+//上传文件
+  function binEvent(){
+      reader.onprogress = function(e){
+        onprogress(e.loaded);//e.loaded当前上传了的大小
+      }
+      reader.onload = function(){
+        onload();
+      }
+  }
+  //动态修改进度条，和传输的百分值
+  function onprogress(num){
+      loaded +=num;
+      var per = loaded/total;
+      per > 1 ? 1 : per;
+      progress.style.width = per *250 +'px';
+      bai.innerHTML = Math.floor(per *100) +'%';
+  }
+  //判断文件的总大小传输完成了没有，没有继续上传
+  function onload(){
+        console.log('上传完成'+loaded+'部分');
+        if(loaded < total){
+            readBlob(loaded,speed,reader);
+             binEvent();
+        }else{
+            console.log('我终于上传完成了');
+        }
+  }
+</script>
+</body>
+</html>

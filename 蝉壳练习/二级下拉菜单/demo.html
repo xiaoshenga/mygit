@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+<title></title>
+    <style>
+        body,a,ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+        .nav{
+            width: 500px;
+            margin: 20px auto;
+        }
+        .nav .list-itme{
+            background:rgb(104, 75, 75);
+            height: 40px;
+
+        }
+        .nav .list-itme>li{
+            height: 40px;
+            line-height: 40px;
+            float: left;
+            /* margin: 0 10px; */
+        }
+        .nav .list-itme>li>a{
+            display: block;
+            height:40px;
+            padding: 0 20px;
+            color: #fff;
+        }
+        .nav .list-itme>li>a:hover{
+            background-color: #000;
+            color: #fff;
+        }
+
+        .nav-nav{
+            border: 1px solid black;
+            padding: 0 20px;
+            display: none;
+        }
+        .show{
+            border: 1px solid black;
+            padding: 0 20px;
+             display: block;
+     }
+    </style>
+</head>
+<body>
+  <div>
+      <div class="nav">
+          <ul class="list-itme">
+              <li>
+                  <a href="">首页 </a>
+                  <div class = "nav-nav" id="nav-nav">
+                        <ul>
+                            <li><a href="">首页</a></li>
+                            <li><a href="">首页</a></li>
+                            <li><a href="">首页</a></li>
+                        </ul>
+                 </div>
+              </li>
+              <li >
+                  <a href="" >新闻  </a> 
+                  <div class = "nav-nav" id="nav-nav">
+                        <ul>
+                            <li><a href="">新闻</a></li>
+                            <li><a href="">新闻</a></li>
+                            <li><a href="">新闻</a></li>
+                        </ul>
+                 </div>
+              </li>
+              <li>
+                  <a href="">娱乐</a>
+                  <div class = "nav-nav" id="nav-nav">
+                        <ul>
+                            <li><a href="">娱乐</a></li>
+                            <li><a href="">娱乐</a></li>
+                            <li><a href="">娱乐</a></li>
+                        </ul>
+                 </div>
+              </li>
+              <li>
+                  <a href="">游戏</a>
+                  <div class = "nav-nav" id="nav-nav">
+                        <ul>
+                            <li><a href="">游戏</a></li>
+                            <li><a href="">游戏</a></li>
+                            <li><a href="">游戏</a></li>
+                        </ul>
+                 </div>
+              </li>
+          </ul>
+      </div>
+
+  </div>
+  <script>
+      var li = document.getElementsByTagName('li');
+      console.log(li);
+      for(var i = 0; i<li.length; i++){
+          (function (i){
+            li[i].onmousemove = function (){
+           var b= li[i].getElementsByTagName('div')[0];
+           console.log(b);
+           if(b){
+            b.style.display = 'block';
+           }
+           
+          }
+          console.log(li[i]);
+          li[i].onmouseout = function(){
+            var b= li[i].getElementsByTagName('div')[0];
+           console.log(b);
+           if(b){
+            b.style.display = 'none';
+           }
+           
+          }
+          }(i))
+
+
+      }
+  </script>
+</body>
+</html>

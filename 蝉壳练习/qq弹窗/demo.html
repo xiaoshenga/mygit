@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+     <title></title>
+    <style>
+        body{
+            height:965px;
+            margin: 0;
+        }
+        a{
+            position: fixed;
+            right: 0;
+            bottom: -300px;
+            width: 400px;
+            height: 300px;
+            background:url('imgs/0.jpg');
+            background-size: 100% 100%;
+
+        }
+        img{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width:20px;
+            height: 20px;
+            transition: all 1s linear;
+        }
+        .active{
+            bottom: 0;
+            transition: all 1s linear;
+            
+        }
+        .hidden{
+            bottom: -300px;
+            transition: all 1s linear;
+        }
+    </style>
+</head>
+<body>
+  <iframe src="http://www.qq.com" frameborder="0" width="100%" height="100%"></iframe>
+  <div>
+    <a href="javascript:;">
+        <img src="imgs/close.jpg" alt="">
+    </a>
+  </div>
+  <script>
+      var img = document.getElementsByTagName('img')[0],
+            a = document.getElementsByTagName('a')[0];
+        window.onload = function (){
+            a.className = 'active';
+        }
+      img.onclick = function () { 
+        a.className = 'hidden';
+      }
+  </script>
+</body>
+</html>
