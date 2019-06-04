@@ -8,7 +8,7 @@
             position: relative;
             width: 300px;
             min-height: 40px;
-            margin: 0 auto;
+            margin: 50px auto;
             text-align: center;
             margin-top: 10px;
 
@@ -37,7 +37,7 @@
             margin: 0;
             display: none;
             height: 60px;
-            background: red;
+            background: pink;
             border-bottom-left-radius: 50%;
             border-bottom-right-radius: 50%;
             line-height: 60px;
@@ -102,7 +102,7 @@
     <div class="wrapper">
         <div class="itme">
             <span>小生</span>
-            <p>kdfahsjkfhjsahfjks</p>
+            <p>此处省略n个字。。。。</p>
         </div>
     </div>
     <script src="./jquery-3.3.1.js"></script>
@@ -114,13 +114,13 @@
 
         //第一季点击创建蒙层
         $('.add').one('click',function(){
-            var str = '    <div class="hid">\
-                                <div class="box">\
-                                    <input type="text" class="name"value=\'name\'>\
-                                    <input type="text" class="des"value=\'描述\'>\
-                                    <div class="hidden">X</div>\
-                                </div>\
-                            </div>';
+            var str =     `<div class="hid">
+                                <div class="box">
+                                    <input type="text" class="name" value='name'>
+                                    <input type="text" class="des" value='描述'>
+                                    <div class="hidden">X</div>
+                                </div>
+                            </div>`;
             $('body').append(str);
         }).on('click',function(){
             $('.hid').fadeIn();
@@ -130,10 +130,11 @@
         $('body').on('click','.hidden',function(){
             var name = $('.name').val();
                 des = $('.des').val();
+               
                 $('.wrapper').append('\
                                     <div class="itme">\
                                         <span>'+name+'</span>\
-                                        <p>kdfahsjkfhjsahfjks</p>\
+                                        <p>'+des+'</p>\
                                     </div>\
                 ')
             $('.hid').fadeOut();
