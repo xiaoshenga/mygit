@@ -80,9 +80,13 @@ footer{
 	left: 0;
 	transition: all 1s;
 }
+.b{
+	height: 200px;
+	width: 200px;
+}
 @media screen and (min-width: 400px) and (max-width: 500px) {
 	.weixin{
 		left: -50px;
-	
+		width: 100px;
 	}
 }
