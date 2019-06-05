@@ -35,10 +35,15 @@ header a:hover {
 	
 }
 .row{
-
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 .row .thumbnail{
-	 
+	 height: 320px;
+}
+.row .warpper{
+
 }
 .row .thumbnail img{
 	height: 126px;
@@ -51,6 +56,7 @@ header a:hover {
 	
 }
 .caption{
+	padding-top: 60px !important;
 	text-align: center;
 }
 footer{
