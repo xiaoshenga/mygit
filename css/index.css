@@ -1,12 +1,15 @@
 header{
-	background: rgb(200,179,222);
+	background: black;
+	
 }
 header .navbar{
 	margin-bottom: 0;
 	background: none;
 	border:none;
 }
-
+header a:hover {
+	color: #fff !important;
+}
 .jumu{
 	background:url('../imgs/jum.jpg');
 	background-size: cover;
@@ -41,7 +44,7 @@ header .navbar{
 	height: 126px;
     width: 100%;
     display: block;
-  
+
 }
 .warpper{
 
@@ -76,4 +79,10 @@ footer{
 	top: 151%;
 	left: 0;
 	transition: all 1s;
+}
+@media screen and (min-width: 400px) and (max-width: 500px) {
+	.weixin{
+		left: -50px;
+	
+	}
 }
