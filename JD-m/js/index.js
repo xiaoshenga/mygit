@@ -10,7 +10,7 @@ function search(){
 
 	window.onscroll = function(){
 		let opcity = 0;
-		let top = document.documentElement.scrollTop;
+		let top = getScrollTop();
 		if(top<height){
 			opcity = top / height * 0.85;
 		}else{
@@ -18,7 +18,15 @@ function search(){
 		}
 		sera.style.background = 'rgba(201,21,35,'+opcity+')';
 	}
-
+	function getScrollTop(){  
+	    var scrollTop=0;  
+	    if(document.documentElement&&document.documentElement.scrollTop){  
+	        scrollTop=document.documentElement.scrollTop;  
+	    }else if(document.body){  
+	        scrollTop=document.body.scrollTop;  
+	    }  
+	    return scrollTop;  
+	}
 }
 function banner(){
 
