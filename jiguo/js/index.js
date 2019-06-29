@@ -41,8 +41,8 @@ $(function () {
         $(this).removeClass('jz').addClass('wc');
         var _this = $(this);
         $.ajax({
-            type: 'post',
-            url: 'http://localhost/jiguo/js/json.js',
+            type: 'get',
+            url: 'https://xiaoshenga.github.io/mygit/jiguo/js/json.js',
             dataType: 'json',
             success: function (data) {
                 var str = '';

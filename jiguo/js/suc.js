@@ -33,7 +33,7 @@
        var foo = $('footer').innerHeight(); //底部部分的高度
        if($(window).scrollTop()  >= bo - win -foo){
             $.ajax({
-                type: 'post',
+                type: 'get',
                 url: url,
                 dataType: 'json',
                 success: function(data){
