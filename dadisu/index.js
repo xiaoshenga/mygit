@@ -42,9 +42,9 @@ for(var i = 0; i< img.length; i++){
 }
 
 cui.onmousedown = function (e){
-    cui.src= 'imgs/hammer2.png'
+    cui.src= 'https://xiaoshenga.github.io/mygit/dadisu/imgs/hammer2.png'
     document.onmouseup = function (){
-        cui.src= 'imgs/hammer1.png';
+        cui.src= 'https://xiaoshenga.github.io/mygit/dadisu/imgs/hammer1.png';
         // document.onmousemove = null;
     }
 }
@@ -78,7 +78,7 @@ function chuxian(){
             setTimeout(function(){
                 key = 0;
                 ImgAry[ran].className = '';
-                ImgAry[ran].src = './imgs/mouse1.png';
+                ImgAry[ran].src = 'https://xiaoshenga.github.io/mygit/dadisu/imgs/mouse1.png';
             },1000)
     }
 }
@@ -92,7 +92,7 @@ cui.onclick = function (e){
     var T = ImgAry[index].getBoundingClientRect().top;
     var B = ImgAry[index].getBoundingClientRect().bottom;
     if(Cx > L && Cx < R && Cy > T && Cy < B){
-        ImgAry[index].src = './imgs/mouse2.png';
+        ImgAry[index].src = https://xiaoshenga.github.io/mygit/dadisu/imgs/mouse2.png';
         fengshu = key == 0 ? fengshu+1 : fengshu;
         key = 1;
         feng.innerHTML = fengshu + "分";
