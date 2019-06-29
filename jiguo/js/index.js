@@ -29,7 +29,6 @@ $(function () {
     ul.on('mouseover',function(){
         console.log('a');
        clearInterval(itmer);
-       console.log(itmer);
     })
     //鼠标移出设置定时器
     // ul.on('mouseout',function(){
@@ -40,9 +39,10 @@ $(function () {
     $('.more-btn').on('click', function () {
         $(this).removeClass('jz').addClass('wc');
         var _this = $(this);
+        var url = location.origin;
         $.ajax({
             type: 'get',
-            url: 'https://xiaoshenga.github.io/mygit/jiguo/js/json.js',
+            url: url+'/mygit/jiguo/js/json.js',
             dataType: 'json',
             success: function (data) {
                 var str = '';
