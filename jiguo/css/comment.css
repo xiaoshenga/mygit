@@ -1,0 +1,234 @@
+body{
+    font-family: "Microsoft YaHei",SimHei,"微软雅黑","黑体" !important;
+    
+}
+header,section,footer{
+    width: 100%;
+
+}
+.inner{
+    width: 1000px;
+    margin: 0 auto;
+    
+}
+header{
+    height: 76px;
+    border-bottom: 1px solid #cecfcf;
+    box-shadow: 0 0 5px #cecfcf inset;
+}
+header .inner{
+    /* background: blue; */
+    height: 76px;
+}
+header .inner .logo {
+    float: left;
+    width: 133px;
+    height: 77px;
+    margin-right: 65px;
+}
+header .inner .logo h1{
+    width: 100%;
+    height: 100%;
+    
+}
+header .inner .logo h1 a{
+    display: block;
+    width: 100%;
+    padding-top: 13px;
+}
+header .inner .logo h1 a img{
+    
+    width: 100%;
+}
+header .inner .nav{
+    width: 400px;
+    /* background: red; */
+    float: left;
+    padding-top: 34px;
+
+}
+header .inner .nav li{ 
+    float: left;
+    margin-right: 50px;
+}
+header .inner .nav li a{
+    font-size: 20px;
+    color: #333;
+    font-weight: 400;
+}
+header .inner .nav li a:hover{
+    color: #fe5341;
+}
+header .inner .nav .active{
+    color: #fe5341;
+}
+header .inner .nav li:nth-child(5){
+    margin-right: 0;
+}
+header .inner .zuce{
+    display: block;
+    width: 50px;
+    height: 30px;
+    border: 1px solid #fe5341;;
+    margin-top: 23px;
+    float: right;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 3px;
+    font-size: 16px;
+}
+header .inner .zuce:hover{
+    background: #fe5341;
+    color: #fff;
+}
+header .inner .search{
+    transition: all 0.5s;
+    width: 40px;
+    height: 42px;
+    margin-top: 28px;
+    margin-right: 15px;
+    float: right;
+    background: url('../imgs/search.png') no-repeat;
+}
+header .inner .search:hover{
+    transform: scale(1.1);
+}
+/* 焦点图 */
+
+section.focus{
+    height: 300px;
+    background: url('../imgs/original.jpg') no-repeat center top;
+    overflow: hidden;
+}
+ .wrap{
+    width: 1000px;
+    margin: 0 auto;
+    min-width: 1000px;
+}
+section .focus-info{
+    line-height: 1.6;
+    text-align: right;
+    color: #fff;
+    padding-top: 35px;
+}
+section .focus-info h2{
+    
+    font-size: 34px;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+section .focus-info p span{
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 16px;
+    margin-right: 10px;
+    background: rgba(255,255,255,.3);
+}
+section .focus-info .itme{
+    padding: 20px 0 16px 0;
+    font-size: 18px;
+}
+section .focus-info .btn a{
+    width: 242px;
+    height: 48px;
+    text-align: center;
+    display: inline-block;
+    line-height: 48px;
+    font-size: 24px;
+    border-radius: 3px;
+    background: #fe5341;
+    color: #fff;
+}
+.title{
+    position: relative;
+    padding: 18px 0 16px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #474747;
+    line-height: 1.6;
+}
+.top-tip{
+    position: absolute;
+    line-height: 22px;
+    z-index: 10;
+    padding: 0 8px;
+    border-radius: 0 0 0 6px;
+    top: 0;
+    right: 0;
+}
+.shoufa{
+    background: #fe5341;
+    color: white;
+}
+.hot-con {
+    padding: 8px 8px 14px;
+    text-align: center;
+}
+ .wrap .title .more{
+    display: block;
+    font-weight: normal;
+    position: absolute;
+    right: 0;
+    top: 22px;
+    padding-right: 17px;
+    font-size: 14px;
+}
+.title .more{
+    background: url(img/readMore.png) no-repeat right 7px;
+    color: #fd6959;
+}
+.wrap ul{
+    padding-bottom: 20px;
+}
+ .wrap ul li{
+    float: left;
+    width: 220px;
+    height: 233px;
+    margin: 0 38px 22px 0;
+    background: white;
+    border-radius: 6px;
+}
+.wrap ul li img{
+    border-radius: 6px 6px  0 0;
+}
+.wrap ul li:nth-child(4n+4){
+    margin-right: 0;
+}
+.wrap .info{
+    padding: 7px 10px 10px;
+}
+.wrap .info .name{
+    line-height: 20px;
+    font-size: 14px;
+    height: 45px;
+    overflow: hidden;
+    word-break: break-all;
+}
+.wrap .info .left{
+    padding: 13px 0 ;
+    float: left;
+    color: #a3acc3;
+}
+.wrap .info .right{
+    float: right;
+    padding: 13px 0 ;
+}
+.wrap .info .right span{
+    padding-left: 14px;
+}
+.wrap .info .right .one{
+    background: url('./img/zan.png') no-repeat left center;
+}
+.wrap .info .right .two{
+    background: url('./img/reply.png') no-repeat left center;
+}
+.wrap ul li{
+    width: 219px;
+    height: 231px;
+    line-height: 21px;
+    margin: 0 37px 20px 0;
+    float: left;
+    border: 1px solid #e6e9e9;
+    border-radius: 6px;
+}

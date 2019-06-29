@@ -1,0 +1,110 @@
+.new .wrap{
+    text-align: center;
+    height: 100%;
+    /* background: blue; */
+}
+.new .wrap h2{
+    padding: 48px 0;
+    font-size: 40px;
+    font-weight: 500;
+}
+.new .wrap .list span{
+    display:inline-block;
+    color: #f55431;
+    font-size: 18px;
+    width: 165px;
+    padding: 0  0 8px;
+}
+ .new .wrap .list .active{
+    border-bottom: 4px #fe5431 solid;
+}
+main{
+    overflow: hidden;
+}
+main >.box{
+    display: none;
+    overflow: hidden;
+    background: #ccc;
+    padding-top: 24px;
+}
+main >div.active{
+    display: block;
+}
+main .wrap ul{
+    overflow: hidden;
+}
+.daoguo .box ul li{
+    margin-bottom: 40px;
+}
+main>.zuce.box{
+    padding-bottom: 30px;
+    background: #f7f7f7;
+}
+main .box .wrap{
+    border-radius: 8px;
+    box-sizing: border-box;
+    border: 1px #d7d7d7 solid;
+    overflow: hidden;
+    background: white;
+}
+main .box .wrap form{
+    width: 400px;
+    text-align: center;
+    margin:50px auto 150px;
+   
+
+}
+main .box .wrap form p{
+    margin-top: 27px;
+}
+main .box .wrap form input{
+    background: #f7f7f7;
+    color: #a3a3a3;
+    height: 50px;
+    padding-left: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: 1px #eee solid;
+    border-radius: 10px;
+}
+main .box .wrap .title{
+    padding-left: 24px;
+}
+main .box .wrap .title:after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 25px;
+    display: block;
+    left: 0;
+    top: 24px;
+    background: #fe5431;
+}
+main .box .wrap form .submit{
+    background: #fe5431;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 20px;
+}
+main .box .wrap form  p{
+   overflow: hidden;
+}
+main .box .wrap form  p .active{
+    width: 245px;
+    float: left;
+}
+main .box .wrap form  p .yanzen{
+    float: right;
+    display: block;
+    box-sizing: border-box;
+    width: 132px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px #a3a3a3 solid;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
