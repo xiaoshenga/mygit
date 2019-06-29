@@ -92,7 +92,7 @@ cui.onclick = function (e){
     var T = ImgAry[index].getBoundingClientRect().top;
     var B = ImgAry[index].getBoundingClientRect().bottom;
     if(Cx > L && Cx < R && Cy > T && Cy < B){
-        ImgAry[index].src = https://xiaoshenga.github.io/mygit/dadisu/imgs/mouse2.png';
+        ImgAry[index].src = 'https://xiaoshenga.github.io/mygit/dadisu/imgs/mouse2.png';
         fengshu = key == 0 ? fengshu+1 : fengshu;
         key = 1;
         feng.innerHTML = fengshu + "分";
