@@ -51,7 +51,10 @@
     width: 1000px;
     height: 100%;
     float: left;
+    margin:0;
+    border:0;
 }
+
 .hot-box .inner ul li>div{
     position: relative;
     overflow: hidden;

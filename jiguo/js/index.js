@@ -17,6 +17,7 @@ $(function () {
     var itmer = setInterval(move, 2000);
     //上一张点击按钮执行的函数
     function move() {
+
         ul.animate({
             left: -1000,    //left移动
         }, 800, function () {   //动画执行完成狗执行的函数
