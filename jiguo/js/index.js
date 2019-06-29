@@ -14,7 +14,7 @@ $(function () {
             ul.stop(true, true);
         });
     })
-    // var itmer = setInterval(move, 2000);
+    var itmer = setInterval(move, 2000);
     //上一张点击按钮执行的函数
     function move() {
         ul.animate({
@@ -31,9 +31,9 @@ $(function () {
        clearInterval(itmer);
     })
     //鼠标移出设置定时器
-    // ul.on('mouseout',function(){
-    //     itmer = setInterval(move,2000);
-    // })
+    ul.on('mouseout',function(){
+        itmer = setInterval(move,2000);
+    })
     //请求数据
     var index = 0;
     $('.more-btn').on('click', function () {
