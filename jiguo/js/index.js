@@ -43,7 +43,7 @@ $(function () {
         var url = location.origin;
         $.ajax({
             type: 'get',
-            url: url+'/mygit/jiguo/js/json.js',
+            url: url+'/jiguo/js/json.js',
             dataType: 'json',
             success: function (data) {
                 var str = '';
